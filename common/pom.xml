@@ -14,6 +14,7 @@
     </properties>
 
     <repositories>
+        <!-- 添加你需要的仓库地址 -->
         <repository>
             <id>opencollab-repository-maven-snapshots</id>
             <url>https://repo.opencollab.dev/maven-snapshots/</url>
@@ -36,7 +37,7 @@
         <dependency>
             <groupId>com.fasterxml.jackson.dataformat</groupId>
             <artifactId>jackson-dataformat-yaml</artifactId>
-            <version>${jackson.version}</version>
+            <version>$${jackson.version}</version>
             <scope>compile</scope>
         </dependency>
     </dependencies>
@@ -54,6 +55,4 @@
             </plugin>
         </plugins>
     </build>
-
-
 </project>
